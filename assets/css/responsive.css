@@ -1,0 +1,180 @@
+@media (min-width: 1921px) {
+ 
+}
+
+/* XXL Device :1200px. */
+@media (min-width: 320px) and (max-width: 1680px) {
+ 
+  
+}
+
+@media (min-width: 320px) and (max-width: 1399px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1140px;
+  }
+
+}
+
+/* LG Device :1200px. */
+@media (min-width: 320px) and (max-width: 1199px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 960px;
+  }
+  :root {
+    --f32 : 28px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  h5 {
+    font-size: 18px;
+  }
+  .logo__location a img {
+    width: 100px;
+}
+
+.header__search {
+    margin-left: 24px;
+}
+
+.header__location span {
+    font-size: 12px;
+}
+
+.logo__location > a {
+    margin-right: 10px;
+}
+
+.logo__location > a:after {
+    width: 1px;
+    height: 50px;
+}
+}
+
+/* MD Device :768px. */
+@media (min-width: 320px) and (max-width: 991px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 720px;
+  }
+  :root {
+    --f32 : 26px;
+    --f24 : 20px
+  }
+  .hero__slide {
+    margin: 110px auto 60px;
+}
+
+  .logo__location a img {
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+  .logo__location > a:after {
+    display: none;
+  }
+  .f__contact {
+    margin: 2rem 0px;
+    padding: .6rem 2rem;
+}
+
+.copyright {
+    padding-top: 20px;
+}
+
+.footer__content {
+    max-width: 100%;
+}
+}
+
+/* SM Small Device :320px. */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .p-4 {
+    padding: 2rem 0rem !important;
+  }
+  
+  :root {
+    --f32 : 24px;
+  }
+  .header__wrap {
+    padding: 0.6rem 0px;
+}
+.delivery__address {
+  grid-template-columns: repeat(1,1fr);
+}
+
+.checkout__left__card__text {
+  width: 100%;
+}
+
+.meal__selection {
+  flex-wrap: wrap;
+}
+
+.d-flex.align-items-start {
+  flex-direction: column;
+}
+
+div#v-pills-tab {
+  width: 100%;
+  border: none;
+  flex-direction: row !IMPORTANT;
+  margin-bottom: 25px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .footer__lists {
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer__lists * {
+    text-align: start;
+}
+
+.footer__single__list h5 {
+    margin-bottom: 10px;
+}
+
+.footer__single__list ul {
+    gap: 6px;
+}
+}
+
+/* SM Small Device :576px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 540px;
+  }
+
+}

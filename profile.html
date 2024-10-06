@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureAahar: view orders</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/segoe-ui/stylesheet.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+   
+<body>
+
+  <!-- ===================== HEADER AREA START ===================== -->
+   <header class="header__area">
+    <div class="container">
+        <div class="header__wrap d-flex">
+            <div class="logo__location d-flex">
+                <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                <div class="header__location d-lg-flex d-none">
+                    <img src="assets/img/location.svg" alt="">
+                    <span>CP-13, CP Block, Sector V, Bidhan...</span>
+                    <img src="assets/img/arrow-down.svg" alt="">
+                </div>
+                <!-- <div class="header__search d-none d-lg-flex">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span>What do you want to eat?</span>
+                </div> -->
+            </div>
+            <div class="nav__login d-flex">
+                <ul class="d-md-flex d-none">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="meals-page.html">Meals</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                </ul>
+
+                <a class="" data-bs-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fa-regular fa-user"></i>LOGIN/SIGNUP</a>
+                
+                <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered modal__login">
+                    <div class="modal-content modal-content1">
+                      <div class="modal-header modal-header1">
+                        <h5 class="modal-title welcomeh5" id="exampleModalToggleLabel1"> Welcome to PureAahar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="login__number">
+                          <h4>Verify your phone number with code</h4>
+                          <span style="font-size: 12px;">We’ll send you a code. It helps keep your account
+                            secure</span>
+                          <div class="flag__nmbr">
+                            <span style="font-size: 12px;">Your Phone Number</span>
+                            <div class="phone__number">
+                              <div class="flag">
+                                <img src="assets/img/india-Dywmhe4R.png" alt="">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-18rhxbz" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon"><path d="m7 10 5 5 5-5z"></path></svg>
+                              </div>
+                              <div class="number__input">
+                                <span><b>+91</b></span>
+                                <input type="text">
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle22" data-bs-toggle="modal" data-bs-dismiss="modal">COUNTINUE</button> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle22" aria-hidden="true" aria-labelledby="exampleModalToggleLabel22" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered modal__login">
+                    <div class="modal-content modal-content1">
+                      <div class="modal-header modal-header1">
+                        <h5 class="modal-title welcomeh5" id="exampleModalToggleLabel22">Welcome to PureAahar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="login__number">
+                          <div class="verification__title">
+                            <h5>Mobile Verification</h5>
+                            <span>Enter the 6 digit code sent to +91 1234567890</span>
+                          </div>
+                          <div class="verification__input">
+                            <input type="text" placeholder="-">
+                            <input type="text" placeholder="-">
+                            <input type="text" placeholder="-">
+                            <input type="text" placeholder="-">
+                            <input type="text" placeholder="-">
+                            <input type="text" placeholder="-">
+                          </div>
+                          <div class="resend">
+                            <p>Didn't receive code? <a href="#">Resend</a></p>
+                            <span>or</span>
+                            <a href="#">Login with Password</a>
+                          </div>
+                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ===================== HEADER AREA END ===================== -->
+
+  <!-- ===================== MAIN AREA START ===================== -->
+  <main class="overflow-hidden">
+    <!-- ===================== HERO AREA START ===================== -->
+    <section class="meal__checkout">
+      <div class="container">
+        <div class="profile__documents">
+          <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3 tab__btn" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><img src="assets/img/user-profile.png" alt=""> View Orders</button>
+              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><img src="assets/img/user-profile.png" alt="">Personal Details</button>
+              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><img src="assets/img/user-profile.png" alt="">Manage Address</button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <ul class="nav nav-pills mb-3 sub__tab__btn" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">RESTAURANT ORDERS</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">MEAL SERVICE ORDERS</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active tab__span" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <span>No more orders</span>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <h4 style="margin-bottom: 10px;"><b>Order History</b></h4>
+                    <ul class="nav nav-pills mb-3 sub__tab__btn" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab1" data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home1" aria-selected="true">ACTIVE ORDER</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab1" data-bs-toggle="pill" data-bs-target="#pills-profile1" type="button" role="tab" aria-controls="pills-profile1" aria-selected="false">UPCOMING ORDER</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab1" data-bs-toggle="pill" data-bs-target="#pills-contact1" type="button" role="tab" aria-controls="pills-contact1" aria-selected="false">CANCELLED ORDER</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-expired-tab" data-bs-toggle="pill" data-bs-target="#pills-expired" type="button" role="tab" aria-controls="pills-expired" aria-selected="false">EXPIRED ORDER</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active tab__span" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab1">
+                        <span>No order found!</span>
+                      </div>
+                      <div class="tab-pane fade tab__span" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab1">
+                        <span>No order found!</span>
+                      </div>
+                      <div class="tab-pane fade tab__span" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact-tab1">
+                        <span>No order found!</span>
+                      </div>
+                      <div class="tab-pane fade tab__span" id="pills-expired" role="tabpanel" aria-labelledby="pills-expired-tab">
+                        <span>No order found!</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="your__details">
+                  <h5>Add Your Details</h5>
+                  <span style="font-weight: 500;font-size: 12px;">Edit your personal details</span>
+                  <form action="">
+                    <div class="besic__info">
+                      <h6 style="display: flex; gap: 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info "><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg> Basic Information</h6>
+                    </div>
+                    <div class="add__info">
+                      <div class="input__field">
+                        <label for="">Full name</label>
+                        <input type="text" placeholder="Rup">
+                      </div>
+                      <div class="input__field">
+                        <label for="">Birthdate</label>
+                        <input type="datetime" placeholder="Rup">
+                      </div>
+                      <div class="input__field">
+                        <label for="">Email (Optional)</label>
+                        <div class="add-mail">
+                          <input value="rupak.manna99@gmail.com">
+                          <button>Change</button>
+                        </div>
+                        <div class="gender-select">
+                          <label for="">Gender:</label>
+                          <div class="hero__single__form__select">
+                              <select name="" id="">
+                                  <option value="">Male</option>
+                                  <option value="">Female</option>
+                                  <option value="">Others</option>
+                              </select>
+                          </div>
+                        </div>
+                        <div class="detail_check">
+                          <label for="">Receive WhatsApp update?</label>
+                          <input type="checkbox">
+                        </div>
+                      </div>
+                      <button class="btns">UPDATE</button>
+                    </div>
+                  </form>
+                </div>
+
+
+                <!-- <div class="refer">
+                  <h5>How to refer a friend</h5>
+                  <div class="refer__content">
+                    <h6>We value friendship</h6>
+                    <span><small>Follow the steps below and get rewarded</small></span>
+                    <div class="refer__rule">
+                      <div class="refer__single__rule">
+                        <div class="circle">
+                          <span>1</span>
+                        </div>
+                        <p>Share your link 🔗</p>
+                      </div>
+                      <div class="refer__single__rule">
+                        <div class="circle">
+                          <span>2</span>
+                        </div>
+                        <p>Your friends signup using your link</p>
+                      </div>
+                      <div class="refer__single__rule">
+                        <div class="circle">
+                          <span>3</span>
+                        </div>
+                        <p>Your friends receive their first order</p>
+                      </div>
+                    </div>
+                    <div class="get__coin">
+                      <div class="get__single__coin">
+                        <img src="assets/img/gift-BJPYSxPw.png" alt="">
+                        <p><span>You get</span><br>50 Coins  |  50 Coins  50 INR</p>
+                      </div>
+                      <div class="get__single__coin">
+                        <img src="assets/img/money-D8Lkrys7.png" alt="">
+                        <p><span>They get</span><br>25 Coins  |  25 Coins  25 INR</p>
+                      </div>
+                    </div>
+                    <span class="link">https://pureaahar.com/?refCode=PA_13C595FC5&signup=1</span>
+                    <div class="refer__btn d-flex">
+                      <button><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2m0 16H8V7h11z"></path></svg>COPY LINK</button>
+                      <button><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-9klts8" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WhatsAppIcon"><path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path></svg>SHARE</button>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <div class="checkout__left__card checkout__left__card2">
+                  <div class="checkout__left__card__title d-flex">
+                    <h6>Manage Address</h6>
+                  </div>
+                  <div class="delivery__address delivery__address2">
+                    <div class="address__card add__address">
+                      <a class="" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                        <h6>+ Add Address</h6></a>
+
+
+
+
+                      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered modal__area">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="select__location">
+                                <h5>SELECT LOCATION</h5>
+                                <div class="location__type">
+                                  <input type="text" placeholder="HCWP+VR Rajarhat, Kolkata, West Bengal, India">
+                                </div>
+                                <img src="assets/img/Screenshot_150.png" alt="">
+                                <span>Please provide accurate location for hassle-free delivery experience.</span>
+                              </div>
+                            </div>
+                            <button class="btns" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content modal-content2">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalToggleLabel2"><img src="assets/img/location-BBKCEJe0.png" alt=""> Locality</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="reciever__address">
+                                <p><small>HCWP+VR Rajarhat, Kolkata, West Bengal, India</small></p>
+                                <form action="/action_page.php">
+                                  <div class="input__field">
+                                    <label for="">RECEIVER'S CONTACT NUMBER.</label>
+                                    <input type="text" placeholder="Eg: 9876543210">
+                                  </div>
+                                  <div class="input__field">
+                                    <label for="">FLAT / HOUSE NUMBER, NAME OF BUILDING ETC.</label>
+                                    <input type="text" placeholder="Eg: 9876543210">
+                                  </div>
+                                  <div class="input__field">
+                                    <label for="">FLOOR / BLOCK (OPTIONAL)</label>
+                                    <input type="text" placeholder="Eg: 9876543210">
+                                  </div>
+                                  <div class="input__field">
+                                    <label for="">LANDMARK / DIRECTION TO REACH (OPTIONAL)</label>
+                                    <input type="text" placeholder="Eg: 9876543210">
+                                  </div>
+                                  <div class="mark">
+                                    <input type="checkbox">
+                                    <label for="">Make this my default address</label>
+                                  </div>
+                                  
+                                </form>
+                                <div class="save__address__btn">
+                                  <button class="btns save__addresses"><img src="assets/img/home-DQtWHZh5.png" alt=""> Home</button>
+                                  <button class="btns save__addresses"><img src="assets/img/briefcase-BY4GfCaC.png" alt=""> Work</button>
+                                  <button class="btns save__addresses"><img src="assets/img/location-BBKCEJe0.png" alt=""> Other</button>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btns form__btn" data-bs-toggle="modal" data-bs-dismiss="modal">Save Address</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="address__card address__card__place2">
+                      <div class="left__address">
+                        <img src="assets/img/home-DQtWHZh5.png" alt="">
+                      </div>
+                      <div class="right__address">
+                        <div class="title__address">
+                          <span><b>Home</b></span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-2xl text-green"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg>
+                        </div>
+                        <p>HCWP+VR Rajarhat, Kolkata, West Bengal, India</p>
+                        <div class="btn__address">
+                          <button>DELETE</button>
+                          <button>EDIT</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="address__card address__card__place2">
+                      <div class="left__address">
+                        <img src="assets/img/briefcase-BY4GfCaC.png" alt="">
+                      </div>
+                      <div class="right__address">
+                        <div class="title__address">
+                          <span><b>Work</b></span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-2xl text-green"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg>
+                        </div>
+                        <p>HCWP+VR Rajarhat, Kolkata, West Bengal, India</p>
+                        <div class="btn__address">
+                          <button>DELETE</button>
+                          <button>EDIT</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== HERO AREA END ===================== -->
+
+  </main>
+  <!-- ===================== MAIN AREA END ===================== -->
+
+  <!-- ===================== FOOTER AREA START ===================== -->
+  <footer id="footer__area" class="footer__area p-4">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="row g-4">
+              <div class="col-lg-5">
+                <div class="footer__content">
+                  <img src="assets/img/logo.png" alt="">
+                  <p>Order pure vegetarian food, subscribe for weekly & monthly meal services online and get delicious meals delivered to your doorstep from PureAahar, India's best No Onion No Garlic cloud kitchen.</p>
+                  <p>At PureAahar, we bring convenience and taste to your doorstep with our cloud kitchen model. We are here to serve you with an array of mouthwatering pure vegetarian dishes, crafted with love and care. Simply browse our menu, place your order online, and let us work our magic in the kitchen.</p>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="footer__lists">
+                  <div class="footer__single__list">
+                    <h5>GET HELP</h5>
+                    <ul>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Help & Support</a></li>
+                      <li><a href="#">Delivery Policies</a></li>
+                      <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__single__list">
+                    <h5>COMPANY</h5>
+                    <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Privacy Policies</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Disclaimers</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__single__list">
+                    <h5>FOLLOW US</h5>
+                    <ul class="footer__social">
+                      <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                      <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                      <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="f__contact">
+              <span><i class="bi bi-telephone-fill"></i></span>
+              <a href="tel:+918584918100">Call Us at <br><b>+91 9064603108</b></a>
+            </div>
+            <div class="copyright">
+              <p>Copyright © 2024 dailyfud.com. Bytesync Innovations Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- ===================== FOOTER AREA END ===================== -->
+  
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <script>
+    const daysTag = document.querySelector(".days");
+const currentDate = document.querySelector(".current-date");
+const prevNextIcon = document.querySelectorAll(".icons span");
+
+let currYear = new Date().getFullYear();
+let currMonth = new Date().getMonth();
+
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const renderCalendar = () => {
+    const date = new Date(currYear, currMonth, 1);
+    let firstDayofMonth = date.getDay();
+    let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();
+    let lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay();
+    let lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
+
+    let liTag = "";
+
+    for (let i = firstDayofMonth; i > 0; i--) {
+        liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+    }
+
+    for (let i = 1; i <= lastDateofMonth; i++) {
+        let isToday = i === new Date().getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active" : "";
+        liTag += `<li class="${isToday}">${i}</li>`;
+    }
+
+    for (let i = lastDayofMonth; i < 6; i++) {
+        liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
+    }
+
+    currentDate.innerText = `${months[currMonth]} ${currYear}`;
+    daysTag.innerHTML = liTag;
+};
+
+renderCalendar();
+
+prevNextIcon.forEach(icon => {
+    icon.addEventListener("click", () => {
+        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+
+        if (currMonth < 0 || currMonth > 11) {
+            currYear = icon.id === "prev" ? currYear - 1 : currYear + 1;
+            currMonth = currMonth < 0 ? 11 : 0;
+        }
+
+        renderCalendar();
+    });
+});
+  </script>
+  <script>
+    
+    let swiper2 = new Swiper(".hero__slide", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      centeredSlides: false,
+      freeMode: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.25,
+          spaceBetween: 20
+        },
+        641: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1201: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
+  }
+    });
+    let swiper3 = new Swiper(".popular__cuisine", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: false,
+      freeMode: true,
+      autoplay: false,
+      pagination: {
+
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        641: {
+          slidesPerView: 4,
+          spaceBetween: 20
+        },
+        1201: {
+          slidesPerView: 6,
+          spaceBetween: 20
+        }
+      }
+    });
+    let swiper1 = new Swiper("#brand__service", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      centeredSlides: false,
+      freeMode: true,
+      autoplay: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        641: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        1201: {
+          slidesPerView: 4,
+          spaceBetween: 20
+        }
+      }
+    });
+    let swiper4 = new Swiper("#pureahar__exclusive", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      centeredSlides: false,
+      freeMode: true,
+      autoplay: false,
+      pagination: {
+
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        641: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        1201: {
+          slidesPerView: 4,
+          spaceBetween: 20
+        }
+      }
+    });
+  </script>
+
+  <script>
+    AOS.init();
+    // data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: "aos-init", // class applied after initialization
+      animatedClassName: "aos-animate", // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+    });
+  </script>
+
+  
+</body>
+
+</html>
